@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	
 }
 ol, ul {
 	list-style: none;
@@ -136,6 +137,25 @@ li:hover {
 .gallery img {
 	width: 100%;
 
+}
+#portfolio nav ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style-type: none;
+}
+#portfolio nav ul li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 40px;
+	padding: 0 10px;
+	font-size: 20px;
+	margin: 25px 0 25px 12px;
+    border-radius: 60px;
+    border: 1px solid;
+	font-family: Syne;
+	color: #1D6154;
 }
 #contact {
 	width: 50%;
