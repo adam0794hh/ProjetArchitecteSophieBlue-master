@@ -61,7 +61,8 @@ fetch("http://localhost:5678/api/categories")
                     let currentFigure = worksContainer.children[i];
                     currentFigure.style.display = "block";
                 }
-               
+                this.style.backgroundColor = "#1D6154";
+                this.style.color = "white";
             });
             Objets.addEventListener("click", function () {
                 let selectedCategory = Objets.id;
@@ -73,7 +74,8 @@ fetch("http://localhost:5678/api/categories")
                     currentFigure.style.display = "none";
                 }
                 }
-               
+                this.style.backgroundColor = "#1D6154";
+                this.style.color = "white";
             });
             Appartements.addEventListener("click", function () {
                 let selectedCategory = Appartements.id;
@@ -85,7 +87,8 @@ fetch("http://localhost:5678/api/categories")
                     currentFigure.style.display = "none";
                 }
                 }
-               
+                this.style.backgroundColor = "#1D6154";
+                this.style.color = "white";
             });
             hotelResto.addEventListener("click", function () {
                 let selectedCategory = hotelResto.id;
@@ -97,7 +100,8 @@ fetch("http://localhost:5678/api/categories")
                     currentFigure.style.display = "none";
                 }
                 }
-               
+                this.style.backgroundColor = "#1D6154";
+                this.style.color = "white";
             });
             
               
