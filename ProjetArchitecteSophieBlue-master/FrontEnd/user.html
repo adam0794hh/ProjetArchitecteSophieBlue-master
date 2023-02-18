@@ -8,6 +8,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel="stylesheet">
 	<meta name="description" content="">
+	<script src="https://kit.fontawesome.com/3ec232fbc2.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
@@ -28,7 +29,7 @@
 	<section id="introduction">
 		<figure>
 			<img src="./assets/images/sophie-bluel.png" alt="">
-            <a>Modifier</a>
+            <a id="modal2" class="js-modal">Modifier</a>
 		</figure>
 		<article>
 			<h2>Designer d'espace</h2>
@@ -39,6 +40,15 @@
 	</section>
 	<section id="portfolio">
 		<h2>Mes Projets</h2>
+        <a href="#modal1" class="js-modal">Modifier</a>
+		<aside id="modal1" class="modal" aria-hidden="true" style="display: none;">
+			<div class="modal-content modal-stop">
+				<i class="fa-solid fa-xmark fa-xl"></i>
+				<h2>Galerie photos</h2>
+				
+			</div>
+		</aside>
+        
 		<!-- <div class="gallery">
 			<figure>
 				<img src="assets/images/abajour-tahina.png" alt="Abajour Tahina">
@@ -108,6 +118,6 @@
 		</ul>
 	</nav>
 </footer>
-
+<script src="/ProjetArchitecteSophieBlue-master/FrontEnd/js/user.js"></script>
 </body>
 </html>
