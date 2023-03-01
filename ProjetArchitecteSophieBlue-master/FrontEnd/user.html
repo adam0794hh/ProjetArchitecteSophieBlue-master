@@ -29,7 +29,7 @@
 	<section id="introduction">
 		<figure>
 			<img src="./assets/images/sophie-bluel.png" alt="">
-            <a id="modal2" class="js-modal">Modifier</a>
+            <a id="modle" class="js-modal"><i class="fa-regular fa-pen-to-square fa-xl"></i> Modifier</a>
 		</figure>
 		<article>
 			<h2>Designer d'espace</h2>
@@ -40,14 +40,43 @@
 	</section>
 	<section id="portfolio">
 		<h2>Mes Projets</h2>
-        <a href="#modal1" class="js-modal">Modifier</a>
+		
+        <a href="#" id="link-modal">
+			<i class="fa-regular fa-pen-to-square fa-xl"></i> Modifier</a>
 		<aside id="modal1" class="modal" aria-hidden="true" style="display: none;">
 			<div class="modal-content modal-stop">
 				<i class="fa-solid fa-xmark fa-xl"></i>
 				<h2>Galerie photos</h2>
+				<div class="border"></div>
 				
 			</div>
 		</aside>
+		
+
+		<div id="modal2" class="modal">
+			<div class="modal2-content">
+				<i class="fas fa-xmark fa-xl "></i>
+				<i class="fas fa-arrow-left fa-xl"></i>
+				<h2>Ajouter une photo</h2>
+				<form id="modal-form">
+					
+					<div id="image-preview">
+						
+						<div>Ajouter photo
+							<input type="file" id="image-upload">
+						</div>
+					</div>
+					<br>
+					<label class="lablTitle" for="title">Titre :</label>
+					<input type="text" id="title" name="title"><br>
+					<label class="lablCateg" for="category">Catégorie :</label>
+					<input type="text" id="category" name="category"><br>
+					<div class="border2"></div>
+					<input class="AjouterPhoto" type="submit" value="Ajouter">
+				</form>
+			</div>
+		</div>
+
         
 		<!-- <div class="gallery">
 			<figure>

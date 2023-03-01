@@ -106,6 +106,7 @@ li:hover {
 #introduction {
 	display: flex;
 	align-items: center;
+	position: relative;
 }
 #introduction figure {
 	flex: 1
@@ -126,14 +127,27 @@ li:hover {
 #introduction p {
 	margin-bottom: 0.5em;
 }
+#portfolio {
+	position: relative;
+}
 #portfolio h2 {
 	text-align: center;
 	margin-bottom: 1em;
 }
 /* creation de la modale  */
+#link-modal {
+	position: absolute;
+    right: 32%;
+    top: 0.4%;
+}
+.js-modal {
+	left: 5%;
+    position: absolute;
+    bottom: -7%;
+}
 .modal {
 	position: fixed;
-	display: flex;
+	display: none;
 	align-items: center;
 	justify-content: center;
 	top: 0;
@@ -145,6 +159,7 @@ li:hover {
 	
 }
 .modal-content {
+	position: relative;
 	background-color: #FFF;
 	width: 630px;
 	height: 731px;
@@ -165,8 +180,8 @@ li:hover {
 }
 .fa-solid {
 	position: absolute;
-    left: 73%;
-    top: 60px;
+    left: 93%;
+    top: 35px;
 	cursor: pointer;
 }
 .modal-projet {
@@ -176,6 +191,42 @@ li:hover {
 	height: 400px;
     width: 490px;
     align-items: center;
+}
+.btn {
+	font-family: 'Syne';
+	font-weight: 700;
+	color: white;
+	background-color: #1D6154;
+	margin : 2em auto ;
+	width: 180px;
+	text-align: center;
+	border-radius: 60px;
+	height: 45px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	position: absolute;
+	bottom: 11%;
+	right: 39%;
+}
+.img-container {
+	position: relative;
+}
+.iconContainer {
+	position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 17px;
+    height: 17px;
+    background: black;
+	top: 0.5%;
+    right: 10.7%
+}
+
+
+.fa-trash-alt:before {
+	color: white;
 }
 .gallery {
 	width: 100%;
@@ -272,4 +323,118 @@ footer nav ul {
 	justify-content: flex-end;
 	margin: 2em
 }
+
+/* Style de la modal */
+.modal2 {
+	display: none; /* Masquer la modal par défaut */
+	position: fixed; /* Position fixe pour la modal */
+	z-index: 1; /* Faire en sorte que la modal soit au-dessus de tout */
+	left: 0;
+	top: 0;
+	width: 100%; /* Prendre toute la largeur */
+	height: 100%; /* Prendre toute la hauteur */
+	overflow: auto; /* Ajouter un scroll si nécessaire */
+	background-color: rgba(0,0,0,0.4); /* Ajouter un fond noir semi-transparent */
+  }
+  
+  /* Style pour le contenu de la modal */
+  .modal2-content {
+	position: relative;
+	background-color: #FFF;
+	width: 630px;
+	height: 731px;
+	padding: 20px;
+	max-width: calc(100vw - 20px);
+	border-radius: 10px;
+	font-family: 'Syne';
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	color: #3D3D3D;
+
+  }
+  #modal-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	
+  }
+  .lablTitle {
+	position: absolute;
+    bottom: 49%;
+    left: 17%;
+  }
+  .lablCateg {
+	position: absolute;
+    bottom: 26%;
+    left: 17%;
+  }
+  #category , #title {
+	width: 420px;
+	height: 50px;
+    font-size: 1.2em;
+    border: none;
+    box-shadow: 0px 4px 14px rgb(0 0 0 / 9%);
+	margin-bottom: 37px;
+  }
+  #modal-form input[type="submit"] {
+	height: 47px;
+	width: 237px;
+	position: absolute;
+	bottom: -35%;
+  }
+  .fa-xmark {
+	position: absolute;
+    right: 4%;
+    bottom: 95.9%;
+}
+  
+  /* Style pour le bouton de fermeture */
+  .close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+  }
+  .border {
+	position: absolute;
+	width: 420px;
+	height: 0px;
+	bottom: 27%;
+	right: 21%;
+	border: 1px solid #B3B3B3;
+  }
+  .border2 {
+	position: absolute;
+	width: 420px;
+	height: 0px;
+	bottom: -5%;
+	right: 17%;
+	border: 1px solid #B3B3B3;
+  }
+  
+  /* Style pour le bouton de fermeture au survol */
+  .close:hover,
+  .close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+  }
+  #image-preview {
+	width: 420px;
+	height: 169px;
+	border: 1px solid #ccc;
+	background: #E8F1F7;
+	border-radius: 3px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: 30px;
+  }
+  
+ 
+  
+  
+  
 
