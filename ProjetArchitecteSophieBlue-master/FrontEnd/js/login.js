@@ -18,6 +18,7 @@ form.addEventListener("submit", (event) => {
         try {
             const data = await response.json();
             if (response.ok) {
+                localStorage.setItem("token", data.token)
                 window.location.href = "/ProjetArchitecteSophieBlue-master/FrontEnd/user.html";
             } else {
                 alert("Login failed");
