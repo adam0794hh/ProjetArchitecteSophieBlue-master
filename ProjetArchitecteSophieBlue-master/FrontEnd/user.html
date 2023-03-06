@@ -16,8 +16,12 @@
 	<h1>Sophie Bluel <span>Architecte d'inteérieur</span></h1>
 	<nav>
 		<ul>
-			<li>projets</li>
-			<li>contact</li>
+			<a href="#portfolio">
+				<li>projets</li>
+			</a>
+			<a href="#contact">
+				<li>contact</li>
+			</a>
 			<a href="./login.html">
 				<li>logout</li>
 			</a>
@@ -61,18 +65,23 @@
 				<form id="modal-form">
 					
 					<div id="image-preview">
-						
-						<div>Ajouter photo
-							<input type="file" id="image-upload">
-						</div>
+						<i class="fas fa-image fa-4x"></i>
+						<input id="image-upload" type="file" >
+						<p>jpg, png : 4mo max</p>
+						<div class="imageContainer"></div>
 					</div>
 					<br>
 					<label class="lablTitle" for="title">Titre :</label>
 					<input type="text" id="title" name="title"><br>
 					<label class="lablCateg" for="category">Catégorie :</label>
-					<input type="text" id="category" name="category"><br>
+					<select id="category" name="category">
+						<option value="1">Objects</option>
+						<option value="2">Appartements</option>
+						<option value="3">Hotels & restaurants</option>
+					</select>
+					<br>
 					<div class="border2"></div>
-					<input class="AjouterPhoto" type="submit" value="Ajouter">
+					<input class="AjouterPhoto" type="submit" value="Valider">
 				</form>
 			</div>
 		</div>
@@ -147,6 +156,6 @@
 		</ul>
 	</nav>
 </footer>
-<script src="/ProjetArchitecteSophieBlue-master/FrontEnd/js/user.js"></script>
+<script src="/js/user.js"></script>
 </body>
 </html>
