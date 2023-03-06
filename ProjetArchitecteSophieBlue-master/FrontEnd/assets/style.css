@@ -22,6 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -30,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	background: floralwhite;
 	
 }
 a {
@@ -364,11 +366,25 @@ footer nav ul {
 	position: absolute;
     bottom: 49%;
     left: 17%;
+	font-family: Work Sans;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 16px;
+	letter-spacing: 0em;
+	text-align: left;
+
   }
   .lablCateg {
 	position: absolute;
     bottom: 26%;
     left: 17%;
+	font-family: Work Sans;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 16px;
+	letter-spacing: 0em;
+	text-align: left;
+
   }
   #category , #title {
 	width: 420px;
@@ -383,6 +399,13 @@ footer nav ul {
 	width: 237px;
 	position: absolute;
 	bottom: -35%;
+	font-family: Syne;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 17px;
+	letter-spacing: 0em;
+	text-align: center;
+
   }
   .fa-xmark {
 	position: absolute;
@@ -431,9 +454,57 @@ footer nav ul {
 	background-repeat: no-repeat;
 	background-position: center;
 	margin-bottom: 30px;
+	position: relative;
+	display: flex;
+    justify-content: center;
   }
+  #image-preview p {
+	position: absolute;
+    top: 85%;
+    font-family: Work Sans;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  #image-upload {
+  display: none; /* masquer le bouton d'origine */
+}
+
+  .custom-file-upload {
+	border: 1px solid #ccc;
+	display: flex;
+	padding: 6px 12px;
+	cursor: pointer;
+	color: #306685;
+    width: 150px;
+    height: 26px;
+    background: #CBD6DC;
+    border-radius: 50px;
+    align-items: center;
+    position: absolute;
+    justify-content: center;
+    bottom: 33px;
+	font-family: Work Sans;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 16px;
+	letter-spacing: 0em;
+	text-align: center;
+}
+  .fa-image:before {
+    content: "\f03e";
+    position: absolute;
+    bottom: 50%;
+	left: 44%;
+    color: #B9C5CC;
+}
   
- 
+  
+  
+  
   
   
   
