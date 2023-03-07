@@ -214,53 +214,7 @@ fetch("http://localhost:5678/api/works")
                           });
                       });
                     }
-                      // // Récupérer la div qui contiendra les projets
-                      // const gallery = document.querySelector('.gallery');
-                      // // worksContainer.remove()
-
-                      // // Pour chaque projet, créer un élément HTML et l'ajouter à la galerie
-                      // works.forEach(work => {
-                      //   // Créer un élément figure pour le projet
-                      //   const figure = document.createElement('figure');
-                        
-                        
-
-                      //   // Ajouter une image pour le projet
-                      //   const image = document.createElement('img');
-                      //   image.src = work.imageUrl;
-                      //   figure.appendChild(image);
-                        
-
-                      //   // Ajouter un titre pour le projet
-                      //   const title = document.createElement('figcaption');
-                      //   title.textContent = work.title;
-                      //   figure.id = "bc"+ work.length.id;
-                      //   figure.categ = work.categoryId;
-                      //   figure.appendChild(title);
-
-                      //   // Ajouter l'élément figure à la galerie
-                      //   gallery.appendChild(figure);
-                      //   modal2.style.display = "none"
-
-                      //   let imgContainer = document.createElement("div");
-                      //   div.appendChild(imgContainer);
-                      //   imgContainer.classList.add("img-container");
-                      //   let img = document.createElement("img");
-                      //   imgContainer.appendChild(img);
-                      //   img.src = work.imageUrl;
-                      //   let iconContainer = document.createElement("div")
-                      //   iconContainer.classList.add("iconContainer");
-                      //   let deleteIcon = document.createElement("i");
-                      //   deleteIcon.classList.add("fas", "fa-trash-alt","fa-sm");
-                      //   iconContainer.appendChild(deleteIcon);
-                      //   imgContainer.appendChild(iconContainer);
-                      //   let imgContainerTxt = document.createElement("p");
-                      //   imgContainerTxt.textContent = "editer"
-                      //   imgContainer.appendChild(imgContainerTxt);
-                        
-                        
                       
-                      // });
                     });
                 } else {
                     alert("envoi echouer");
