@@ -69,6 +69,13 @@ fetch("http://localhost:5678/api/works")
             }
             this.style.backgroundColor = "#1D6154";
             this.style.color = "white";
+            Objets.style.backgroundColor = "floralwhite";
+            Objets.style.color = "#1D6154";
+            Appartements.style.backgroundColor = "floralwhite";
+            Appartements.style.color = "#1D6154";
+            hotelResto.style.backgroundColor = "floralwhite";
+            hotelResto.style.color = "#1D6154";
+            
         });
         Objets.addEventListener("click", function () {
             let selectedCategory = Number(Objets.id);
@@ -82,6 +89,13 @@ fetch("http://localhost:5678/api/works")
             }
             this.style.backgroundColor = "#1D6154";
             this.style.color = "white";
+            Tous.style.backgroundColor = "floralwhite";
+            Tous.style.color = "#1D6154";
+            Appartements.style.backgroundColor = "floralwhite";
+            Appartements.style.color = "#1D6154";
+            hotelResto.style.backgroundColor = "floralwhite";
+            hotelResto.style.color = "#1D6154";
+            
         });
         Appartements.addEventListener("click", function () {
             let selectedCategory = Number(Appartements.id);
@@ -95,6 +109,12 @@ fetch("http://localhost:5678/api/works")
             }
             this.style.backgroundColor = "#1D6154";
             this.style.color = "white";
+            Tous.style.backgroundColor = "floralwhite";
+            Tous.style.color = "#1D6154";
+            Objets.style.backgroundColor = "floralwhite";
+            Objets.style.color = "#1D6154";
+            hotelResto.style.backgroundColor = "floralwhite";
+            hotelResto.style.color = "#1D6154";
         });
         hotelResto.addEventListener("click", function () {
             let selectedCategory = Number(hotelResto.id);
@@ -108,6 +128,12 @@ fetch("http://localhost:5678/api/works")
             }
             this.style.backgroundColor = "#1D6154";
             this.style.color = "white";
+            Tous.style.backgroundColor = "floralwhite";
+            Tous.style.color = "#1D6154";
+            Objets.style.backgroundColor = "floralwhite";
+            Objets.style.color = "#1D6154";
+            Appartements.style.backgroundColor = "floralwhite";
+            Appartements.style.color = "#1D6154";
         });
 
 
