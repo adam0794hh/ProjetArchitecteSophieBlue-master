@@ -158,6 +158,7 @@ fetch("http://localhost:5678/api/works")
               try {
                 const data = await response.json();
                 if (response.ok) {
+                  modal2.style.display = "none"
                   let modalProjet = document.querySelector(".modal-projet")
                   worksContainer.innerHTML = ''
                   modalProjet.innerHTML = ''
@@ -206,6 +207,7 @@ fetch("http://localhost:5678/api/works")
                           .then((response) => {
                             imgContainer.remove();
                             worksContainer.querySelector(`#bc${works[i].id}`).remove();
+                            
                             
                           })
                           
