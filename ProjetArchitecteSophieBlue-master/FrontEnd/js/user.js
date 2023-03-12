@@ -128,7 +128,6 @@ fetch("http://localhost:5678/api/works")
 
         const form = document.getElementById('modal-form');
         
-
         form.addEventListener('submit', (event) => {
           event.preventDefault();
 
@@ -136,15 +135,11 @@ fetch("http://localhost:5678/api/works")
           const category = document.getElementById('category').value;
           const image = document.getElementById('image-upload').files[0];
 
-          
-
           const formData = new FormData();
           formData.append('title', title);
           formData.append('category', category);
           formData.append('image', image);
-          console.log(formData.get("image"))
-          console.log(formData.get("title"))
-          console.log(formData.get("category"))
+          
           const token = localStorage.getItem("token")
 
               fetch('http://localhost:5678/api/works' , {
