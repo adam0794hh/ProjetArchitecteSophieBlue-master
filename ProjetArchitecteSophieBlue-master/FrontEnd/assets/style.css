@@ -147,6 +147,11 @@ li:hover {
     position: absolute;
     bottom: -7%;
 }
+.modifBtn {
+	position: absolute;
+    top: 40px;
+	display: none;
+}
 .modal {
 	position: fixed;
 	display: none;
@@ -210,6 +215,16 @@ li:hover {
 	position: absolute;
 	bottom: 11%;
 	right: 39%;
+}
+.delBtn {
+	font-family: 'Syne';
+    font-weight: 200;
+    position: absolute;
+    bottom: 10%;
+    right: 42%;
+    background: white;
+    border: none;
+    color: red;
 }
 .img-container {
 	position: relative;

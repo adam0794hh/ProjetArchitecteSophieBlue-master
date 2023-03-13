@@ -106,8 +106,9 @@ fetch("http://localhost:5678/api/works")
         
         const modal1 = document.getElementById("modal1");
         const openModal = document.getElementById("link-modal");
+        const modifBtn = document.querySelector(".modifBtn")
         openModal.onclick = function() {
-          
+          modifBtn.style.display = "block"
           modal1.style.display = "flex";
         }
         
